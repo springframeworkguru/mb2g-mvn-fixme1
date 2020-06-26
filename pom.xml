@@ -14,6 +14,7 @@
         <java.version>11</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+        <junit.version>5.7.0-M1</junit.version>
     </properties>
 
     <dependencies>
