@@ -12,6 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>11</java.version>
+	<junit.version>5.6.2</junit.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
@@ -41,9 +42,24 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+	<dependency>
+    		<groupId>org.apache.maven.plugins</groupId>
+    		<artifactId>maven-project-info-reports-plugin</artifactId>
+    		<version>3.1.1</version>
+		<type>maven-plugin</type>
+	</dependency>
     </dependencies>
 
     <build>
+	<pluginManagement>
+      	    <plugins>
+        	<plugin>
+          	    <groupId>org.apache.maven.plugins</groupId>
+          	    <artifactId>maven-project-info-reports-plugin</artifactId>
+          	    <version>3.1.1</version>
+        	</plugin>
+      	    </plugins>
+   	</pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -62,8 +78,17 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-
+	    </plugin>
+	    <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-site-plugin</artifactId>
+	        <version>3.7.1</version>
+	    </plugin>
+	    <plugin>
+        	<groupId>org.apache.maven.plugins</groupId>
+        	<artifactId>maven-project-info-reports-plugin</artifactId>
+        	<version>3.1.1</version>
+      	    </plugin>
         </plugins>
     </build>
 
@@ -74,5 +99,11 @@
                 <artifactId>maven-surefire-report-plugin</artifactId>
                 <version>2.22.0</version>
             </plugin>
-        </plugins>
+	    <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-project-info-reports-plugin</artifactId>
+	       	<version>3.1.1</version>
+	    </plugin>
+	</plugins>
     </reporting>
+</project>
