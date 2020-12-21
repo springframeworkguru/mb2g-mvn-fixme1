@@ -69,6 +69,7 @@
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.8.2</version>
             </plugin>
+            
 
         </plugins>
     </build>
