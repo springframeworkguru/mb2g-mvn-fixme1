@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
  */
 public class Junit5Test {
 
-    @Disabled
     @Test
     void someFauxTest() {
 
