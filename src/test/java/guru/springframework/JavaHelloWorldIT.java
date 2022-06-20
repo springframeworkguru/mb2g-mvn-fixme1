@@ -10,6 +10,6 @@ public class JavaHelloWorldIT {
     @Test
     void myFauxIntegrationTest() {
 
-        System.out.println("My IT Ran");
+        System.out.println("Mi Test de integración se ejecutó");
     }
 }
