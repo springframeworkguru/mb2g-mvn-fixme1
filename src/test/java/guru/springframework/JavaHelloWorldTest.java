@@ -10,6 +10,6 @@ public class JavaHelloWorldTest {
     public void getHello() {
         JavaHelloWorld javaHelloWorld = new JavaHelloWorld();
 
-        assertEquals("Hello World", javaHelloWorld.getHello());
+        assertEquals("Hola Mundo", javaHelloWorld.getHello());
     }
 }

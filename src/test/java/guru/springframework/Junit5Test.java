@@ -13,6 +13,6 @@ public class Junit5Test {
     @Test
     void someFauxTest() {
 
-        Assert.assertEquals("foo", "foo");
+        Assert.assertEquals("chisme", "chisme");
     }
 }
