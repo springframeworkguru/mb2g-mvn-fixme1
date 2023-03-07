@@ -13,6 +13,7 @@ public class Junit5Test {
     @Test
     void someFauxTest() {
 
+        System.out.println("My JUnit 5 Run .. ");
         Assert.assertEquals("foo", "foo");
     }
 }
