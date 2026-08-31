@@ -14,6 +14,7 @@
         <java.version>25</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+        <junit.version>5.3.1</junit.version>
     </properties>
 
     <dependencies>
@@ -47,6 +48,10 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin><plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.6.0-M1</version>
             </plugin>
@@ -76,3 +81,4 @@
             </plugin>
         </plugins>
     </reporting>
+</project>
